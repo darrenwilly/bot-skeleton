@@ -1,0 +1,13 @@
+###> symfony/framework-bundle ###
+/cache/dev/*
+/core/darrism---eftcoreeftcore-old.db
+/core/darrism---eftcoreeftcore.db
+/customer_lic/darrism---eftliceftlic.db
+/veiw/darrism---eftliceftlic-obsolete.db
+/veiw/darrism---eftliceftlic.db
+/veiw/darrism---eftliceftlic-old.db
+/install/
+/DoctrineORMProxy/*
+/log/*
+sessions/*
+###< symfony/framework-bundle ###

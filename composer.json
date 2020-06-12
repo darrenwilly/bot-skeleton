@@ -1,0 +1,42 @@
+{
+    "name": "darviews/bot-skeleton",
+    "description": "A minimal Bot Automation Channel framework project recommended to create bare bones applications",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.2.5",
+        "darviews/bot-automation-channel": "*"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        },
+        "post-install-cmd": [
+            "@auto-scripts"
+        ],
+        "post-update-cmd": [
+            "@auto-scripts"
+        ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.0.*"
+        },
+        "public-dir": "frontctl"
+    }
+}

@@ -1,0 +1,4 @@
+###> symfony/framework-bundle ###
+autoload_psr4.php
+
+###< symfony/framework-bundle ###
